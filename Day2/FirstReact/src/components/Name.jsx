@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Name = () => {
     var[name,setname]=useState()
@@ -17,6 +17,9 @@ const Name = () => {
 
 
     }
+    useEffect(()=>{
+        Java()
+    },[])
 
   return (
     <div>
