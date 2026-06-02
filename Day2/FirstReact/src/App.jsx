@@ -8,6 +8,8 @@ import Signup from './components/Signup'
 import NavBar from './components/NavBar'
 import { Route, Routes } from 'react-router-dom'
 import StateBasics from './components/StateBasics'
+import Cou from './components/Cou'
+import Name from './components/Name'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +21,8 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/' element={<Signup/>}/>
         <Route path='/state' element={<StateBasics/>}/>
+        <Route path='/cou' element={<Cou/>}/>
+        <Route path='/name' element={<Name/>}/>
 
 
       </Routes>
