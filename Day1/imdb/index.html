@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDb Clone</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            IMDB
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <span>Menu</span>
+        </div>
+
+        <div class="search-box">
+            <select>
+                <option>All</option>
+                <option>Movies</option>
+                <option>Series</option>
+            </select>
+
+            <input type="text" placeholder="Search IMDb" />
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">IMDbPro</a>
+            <a href="#">
+                <i class="fa-regular fa-bookmark"></i>
+                Watchlist
+            </a>
+            <a href="#">Sign In</a>
+            <a href="#">EN</a>
+        </div>
+    </header>
+
+
+    <!-- TOP BANNER -->
+    <section class="top-banner">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+            alt="banner">
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- FEATURED -->
+        <section class="featured">
+
+            <button class="arrow left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c"
+                alt="Movie">
+
+            <button class="arrow right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="movie-info">
+                <h1>Featured Movie</h1>
+                <p>Watch trailers, ratings, and more.</p>
+            </div>
+
+        </section>
+
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>Up next</h2>
+
+            <div class="card">
+                <img src="https://picsum.photos/120/160?1" alt="">
+
+                <div class="card-content">
+                    <h3>X-Men '97</h3>
+                    <p>Watch the Season Trailer</p>
+
+                    <div class="likes">
+                        <span>👍 78</span>
+                        <span>❤️ 63</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/120/160?2" alt="">
+
+                <div class="card-content">
+                    <h3>IMDb Interview</h3>
+                    <p>Bringing Eternia to Life</p>
+
+                    <div class="likes">
+                        <span>👍 22</span>
+                        <span>❤️ 16</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/120/160?3" alt="">
+
+                <div class="card-content">
+                    <h3>Movie Trailer</h3>
+                    <p>Latest trending trailer</p>
+
+                    <div class="likes">
+                        <span>👍 55</span>
+                        <span>❤️ 31</span>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+</body>
+</html>
