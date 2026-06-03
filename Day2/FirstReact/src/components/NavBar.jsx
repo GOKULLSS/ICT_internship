@@ -29,6 +29,10 @@ const NavBar = () => {
                 <Button variant='contained'>Name</Button>
                 </Link>
                 &nbsp; &nbsp;
+                <Link to='/api'>
+                <Button variant='contained'>API</Button>
+                </Link>
+                &nbsp; &nbsp;
 
             </Toolbar>
         </AppBar>
