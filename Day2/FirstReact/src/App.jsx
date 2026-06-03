@@ -11,6 +11,7 @@ import StateBasics from './components/StateBasics'
 import Cou from './components/Cou'
 import Name from './components/Name'
 import Api from './components/Api'
+import Product from './components/Product'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
         <Route path='/cou' element={<Cou/>}/>
         <Route path='/name' element={<Name/>}/>
         <Route path='/api' element={<Api/>}/>
+        <Route path='/product' element={<Product/>}/>
 
 
       </Routes>
