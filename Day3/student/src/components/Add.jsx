@@ -1,4 +1,4 @@
-import { TextField } from '@mui/material'
+import { Button, TextField } from '@mui/material'
 import React from 'react'
 
 const Add = () => {
@@ -9,6 +9,7 @@ const Add = () => {
         <TextField label='Age'></TextField><br /><br />
         <TextField label='Department'></TextField><br /><br />
         <TextField label='Mark'></TextField><br /><br />
+        <Button variant='contained' color='success'>Submit</Button>
 
 
 
