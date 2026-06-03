@@ -4,11 +4,12 @@ import React from 'react'
 const Login = () => {
   return (
     <div>
-        <h3>Login page</h3>
-        Email:   <input type="email" name="" id="" placeholder='Email'/><br /><br />
-        Password:<input type="password" name="" id=""  /><br /><br />
-        <button>submit</button><br /><br />
-        <TextField label="hello" variant='filled'/>
+        <h3>Login page</h3><br />
+        <TextField id="outlined-basic" label="Email" variant="outlined" /><br /><br />
+        <TextField id="outlined-basic" label="Password" variant="outlined" /><br /><br />
+
+        <Button variant='contained'>submit</Button><br /><br />
+        
         
         
         
