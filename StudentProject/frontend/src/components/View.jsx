@@ -6,9 +6,18 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const View = () => {
+  const [students, setStudents] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:3000/")
+    .then((res) => {
+      setStudents(res.data);
+    });
+  });
+
   return (
     <div>
       <h1>view</h1>
@@ -23,12 +32,16 @@ const View = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-            </TableRow>
+            {students.map((val) => {
+              return (
+                <TableRow>
+                  <TableCell>{val.name}</TableCell>
+                  <TableCell>{val.age}</TableCell>
+                  <TableCell>{val.department}</TableCell>
+                  <TableCell>{val.mark}</TableCell>
+                </TableRow>
+              );
+            })}
           </TableBody>
         </Table>
       </TableContainer>
