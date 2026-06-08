@@ -16,7 +16,7 @@ const View = () => {
     .then((res) => {
       setStudents(res.data);
     });
-  });
+  },[]);
 
   return (
     <div>
