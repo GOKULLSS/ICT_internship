@@ -17,6 +17,30 @@ router.post('/newstudent',async(req,res)=>{
 
 });
 
+// API for deleting a student
+router.delete('/delete/:id', async (req, res) => {
+    try {
+        
+        await userModel.findByIdAndDelete(req.params.id);
+        res.send("Deleted Successfully");
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
+// API for updating a student
+router.put('/update/:id', async (req, res) => {
+    try {
+        await userModel.findByIdAndUpdate(
+            req.params.id,
+            req.body
+        );
+        res.send("Updated Successfully");
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
 module.exports =router;
 
 
